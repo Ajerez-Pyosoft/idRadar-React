@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'montserrat_lightregular';
+    src: url('./fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.Content {
+        /* float: right; */
+        padding-left: 260px;
+        padding-top: 68px;
+        background-color: #7298A2;
+        height: 100%;
+    
+}
+
+.NotFound {
+    /* height: 700px;
+    text-align: center;
+    padding-top: 25%; */
+    /* width: 100%; */
+}

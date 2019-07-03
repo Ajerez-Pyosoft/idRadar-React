@@ -1,0 +1,9 @@
+.Navigator {
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 68px;
+    left: 0;
+    /* float: left; */
+}

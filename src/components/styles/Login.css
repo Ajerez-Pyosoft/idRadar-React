@@ -1,0 +1,159 @@
+.Login {
+    /* background: linear-gradient(#7298A2 1%, #1E6276 99%); */
+    /* linear-gradient(top, rgba(179,220,237,1) 0%, rgba(31,97,117,1) 97%, rgba(188,224,238,1) 100%); */
+    background: url('../../images/esquinaLogin.jpg') no-repeat center;
+    background-size: 100% 100%;
+    box-shadow: 3px 9px 14px 1px rgba(0, 0, 0, 0.67);
+    border-radius: 4px 4px 4px 4px;
+    /* overflow: hidden; */
+    height: 500px;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: 'montserrat_lightregular';
+}
+
+.Login__Tittle, .Login__Form, 
+.Login__button, .Login__logo {
+    display: inline-block;
+}
+
+.Login__Tittle {
+    padding-left: 5%;
+    padding-top: 8%;
+    width: 100%;
+    /* font-size: 28px; */
+
+}
+
+.Login__Form {
+    padding: 2% 0% 2% 5%;
+    width: 100%;
+}
+
+.Login__Form p {
+    margin: 1px;
+    color: #A9BEC4;
+}
+
+.Login__Form p:hover {
+    color: #64A28D;
+}
+
+input[type=text] {
+    border: 0;
+    background: transparent;
+    height: 30px;
+    width: 280px;
+    margin-bottom: -20px;
+    color: #FFFFFF;
+    font-family: 'montserrat_lightregular';
+}
+
+input[type=text]:hover {
+    color: #93D78F;
+}
+
+input[type=text]:focus + p {
+    color: #93D78F;
+}
+.Login__Esquina img {
+    height: 500px;
+    width: 500px;
+    float: right;
+    clip-path: polygon(1% 0, 100% 85%, 100% 0);
+    /* margin-left: 16px; */
+}
+
+.Login__logo img {
+    /* border-radius: 50%; */
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+.Login__check  + label{
+    background-color: #e9ecee;
+    border: 1px solid #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    margin: 50px 10px 0px 0px;
+}
+
+.Login__check {
+	display: none;
+}
+
+.Login__check + label:active, .Login__check:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.Login__check:checked + label {
+	background-color: #ACF98F;  /* #599476;*/
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #ACF98F;
+}
+
+.Login__check:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #599476;
+}
+
+.Login__checklabel {
+    font-size: 14px;
+    color: #adb8c0;
+    margin: 1px 1px 10px 10px;     
+}
+
+.Login__button {
+    width: 50%;
+    
+}
+
+.button_style {
+    text-decoration: none;
+    margin: 20px 0px 20px 0px;
+    padding: 8px 110px 8px 110px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #4B8688; 
+    background-color: #ACF98F; 
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+    margin: 2% 0% 2% 10%;
+    box-shadow: 3px 9px 14px 1px rgba(0, 0, 0, 0.67);
+    cursor: pointer;
+}
+
+.Login__logo {
+    width: 50%;
+    line-height: 3em;
+    
+}
+
+.Login__logo label {
+    color: #ACF98F;
+    font-weight: 700;
+}
+
+.Login__logo img {
+    float: left;
+    margin: -4% 2% 0px 10%;
+}
+
+
+/* input[type=checkbox] {
+    background-color: #ACF98F;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+} */
