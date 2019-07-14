@@ -6,19 +6,24 @@ import LoginNew from './pages/LoginNew';
 import Main from './pages/Main';
 import DataReview from './pages/DataReview';
 import Notfound from './pages/NotFound';
+import Witsml from './pages/Witsml';
 
 
 function App() {
   return (
     <BrowserRouter>
+    
       <Switch>  
-        <Route exact path='/' component={LoginNew}/>
-        <Layout>
+        <Route exact path='/' component={LoginNew}/>        
+        <Layout> 
         <Route exact path='/Main' component={Main}/>
+        <Route exact path='/Witsml' component={Witsml}/>
         <Route exact path='/DataReview' component={DataReview}/>
-        <Route component={Notfound}/>
-        </Layout>
-      </Switch>    
+        <Route component={Notfound}/>  
+        </Layout> 
+            
+      </Switch>
+        
     </BrowserRouter>
   );
 }

@@ -41,7 +41,26 @@ body {
     color: #64A28D;
 }
 
-input[type=text] {
+.inputStyle {
+    border: 0;
+    background: transparent;
+    height: 30px;
+    width: 280px;
+    margin-bottom: -20px;
+    color: #FFFFFF;
+    font-family: 'montserrat_lightregular';
+}
+
+.inputStyle:hover {
+    color: #93D78F;
+    outline: none;
+}
+
+.inputStyle:focus + p {
+    color: #93D78F;
+    outline: none;
+}
+/* input[type=text] {
     border: 0;
     background: transparent;
     height: 30px;
@@ -57,7 +76,7 @@ input[type=text]:hover {
 
 input[type=text]:focus + p {
     color: #93D78F;
-}
+} */
 .Login__Esquina img {
     height: 500px;
     width: 500px;

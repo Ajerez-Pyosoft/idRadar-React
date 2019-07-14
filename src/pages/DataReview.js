@@ -2,6 +2,8 @@ import React from 'react';
 import PageError from '../components/PageError';
 import PageLoading from '../components/PageLoading';
 
+import DocumentC from '../Document';
+
 import './styles/DataReview.css';
 
 class DataReview extends React.Component {
@@ -28,9 +30,7 @@ class DataReview extends React.Component {
             this.setState({loading: true, error: null})
 
             try {
-                const data1 = await fetch('http://localhost:3000/api/Witsdrillinfos', options).then(res => res.json());
-                // const data = response.json();
-
+                const data1 = await fetch('http://localhost:3000/api/Witsdrillinfos', options).then(res => res.json()); 
                 // console.log(data);
                 this.setState({loading: false, data: data1})
             } catch (error) {
@@ -46,7 +46,8 @@ class DataReview extends React.Component {
                 Accept: 'application/json',
               };
              try{
-                const data2 = await fetch('http://localhost:3000/api/Witsencabezados', options).then(res => res.json());
+                const data2 = await DocumentC.witsml.headers();
+                //await fetch('http://localhost:3000/api/Witsencabezados', options).then(res => res.json());
                 // const data = response.json();
 
                 // console.log(data);
@@ -78,11 +79,11 @@ class DataReview extends React.Component {
                     <h4 className="title"> DATA REVIEW</h4> 
                     {drillInfo.map((test) => {
                         return(
-                                <table className="table table-striped table-dark table-bordered">
+                                <table className="table table-striped table-dark table-bordered" key={test.wdiuid}>
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Propertie</th>
+                                            <th scope="col">Feature</th>
                                             <th scope="col">Value</th>
                                         </tr>
                                     </thead>
@@ -105,7 +106,7 @@ class DataReview extends React.Component {
                                         <tr>
                                             <th scope="row">4</th>
                                             <td>Well</td>
-                                            <td>{test.wdiwellbore}</td>
+                                            <td>{test.wdiwell}</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">5</th>
@@ -135,7 +136,7 @@ class DataReview extends React.Component {
                                         </tr>
                                     </thead>
                     {headers.map((test) => {
-                        return(<tbody>
+                        return(<tbody key={test.wieid}>
                                         <tr>
                                             <td>{test.wieid}          </td>
                                             <td>{test.wieitem}         </td>

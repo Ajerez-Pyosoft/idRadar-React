@@ -16,10 +16,10 @@ render() {
                     <h1>Sign up</h1>
                 </div>
                 <div className="Login__Form">
-                    <input type="text"/>
+                    <input className="inputStyle" type="text"/>
                     <p>___________________________________<br/>
                     User or Email</p>
-                    <input type="text"/>
+                    <input className="inputStyle" type="text"/>
                     <p>___________________________________<br/>
                     Password</p>
                     <input type="checkbox" name="cbLogin" id="cbLogin" className="Login__check" /><label htmlFor="cbLogin"></label><label className="Login__checklabel">I want to keep me login.</label><br/>

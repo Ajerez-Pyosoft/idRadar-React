@@ -72,16 +72,14 @@ class Charts extends React.Component {
         }
     }
 
-    componentDidMount(){
-        this.fetchDrillEncabezados();
-    }
+    // componentDidMount(){
+    //     this.fetchDrillEncabezados();
+    // }
 
-    fetchDrillEncabezados = async () => {
-        const response = await fetch('http://localhost:3000/api/Witsencabezados');
-        const data = await response.json();
-
-        console.log(data);
-    }
+    // fetchDrillEncabezados = async () => {
+    //     const response = await fetch('http://localhost:3000/api/Witsencabezados');
+    //     const data = await response.json();
+    // }
     
     render () {
         return (
